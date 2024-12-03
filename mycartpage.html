@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCardPage</title>
+    <script src="./icon.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+   <header>Hotline: 0968 239 497 - 097 221 6881 * Tư vấn build PC: 0986552233 * Địa chỉ: CS1: 180D Thái Thịnh CS2: 83-85 Thái Hà - Đống Đa - Hà Nội CS3: 40 Đường Vĩnh Viễn - Q10 - TP.HCM
+</header>
+
+<nav>   
+    <div class="container">
+    <ul>
+        <li class="logo"><a href="./homepage.html"><img src="./IMG/logo.png" alt=""></a></li>
+        <li class="search"><input type="text" placeholder="Enter your product...."><i class="fas fa-search"></i></li>
+        <li id="address-form"><a href="#"><i class="fas fa-location-arrow" style="color:black"></i>Ha Noi </a></li>
+        <li class="mycart"><a href="./mycartpage.html"></a><button><i class="fas fa-shopping-cart"></i>May cart</button></li>
+        <li class="contact"><a href="./contactpage.html"><button><i class="fas fa-headset"></i>Contact</button></a></li>
+        <div class="profile">
+            <div class="loginlogup">
+                <li><a href="">Login</a></li>
+                <li>/</li>
+            <li><a href="">Logup</a></li> </div>
+            <li class="account"><a href="./profilepage-information.html"><button><i class="fas fa-user"></i>My account</button></a></li>
+            </div>
+            <div class="address-form">
+              <div class="address-form-content">
+                  <h2> Select shipping address <span id="address-close">X Exit</span></h2>
+                  <form action="">                 
+                  <p> Select the complete delivery address to know the exact transaction time</p>
+                  <select name="" >
+                      <option value="">--Select location</option>
+                      <option value="">Ha Noi</option>
+                      <option value="">Ho Chi Minh</option>
+                      <option value="">Da Nang</option>
+                  </select>
+  
+                  <select name="">
+                      <option value="">--Select district</option>
+                      <option value="">Hoang Mai</option>
+                      <option value="">Nam Tu Niem</option>
+                      <option value="">Thanh Xuan</option>
+                  </select>
+  
+                  <select name="" >
+                      <option value="">--Select ward</option>
+                      <option value="">Hoang Liet</option>
+                      <option value="">Tan Mai</option>
+                      <option value="">Linh Nam</option>
+                  </select>
+                  <input type="text" placeholder="House number, street name, street name (optional)">
+                  <button>Confirm</button>
+              </form>
+              </div>
+          </div>
+    </ul>
+    </div>
+</nav>
+
+<section class="menu-bar">
+    <div class="container">
+        <div class="menu-bar-content">
+    <ul >
+        <li class="listofproduct"><a href="#"><i class="fas fa-list"></i>List of product</a>
+            <div class="submenu">
+                <ul>
+                  <li><a href="./homepage.html#section4" ><i class="fas fa-desktop"></i>Gaming PC </a></li>
+                  <li><a href="./homepage.html#section5"><i class="fas fa-desktop"></i>Graphic PC </i></a></li>
+                  <li><a href="./homepage.html#section6"><i class="fas fa-desktop"></i>Office PC </i></a></li>
+                  <li><a href="./homepage.html#section5"><i class="fas fa-desktop"></i>Worksation PC </i></a></li>
+                  <li><a href="./homepage.html#section8"> <i class="fas fa-headphones"></i>Gear </a></li>
+                  <li><a href="./homepage.html#section7"> <i class="fas fa-sd-card"></i>PC component</i></a></li>
+                  <li><a href="#"><i class="fas fa-desktop"></i>Build PC as require</i></a></li>
+                  <li><a href="#" style="color: #F9BB01">+  More....</a></li>
+                </ul>
+            </div>
+        </li>
+        <li> <a href="">  <img src="./IMG/Quality.png" alt="" class="icon">Quality guaranteed</a></li>
+        <li> <a href="">  <img src="./IMG/shipping.png" alt="" class="icon1">Super fast shipping</a></li>
+        <li> <a href="">  <img src="./IMG/phone.png" alt="" class="icon2">Build PC:0929614783</a></li>
+    </ul>
+        </div>
+    </div>
+</section>
+
+
+<!--homepath --------------------------------- -->
+<div class=".Homepagepadth">
+    <div class="container">
+        <div class="Homepagepadth-container">
+    <li><a href="./homepage.html">Homepage</a></li>
+    <li><span>/</span></li>
+    <li><a href="#">Payment method</a></p></li>
+</div>
+    </div>
+</div>
+
+<!-- ------------------------mycartpage------------- -->
+<section class="card">
+    <div class="container">
+        <div class="cart-content">
+            <div class="cart-items">
+              <h2>Your cart (<span id="cart-count">0</span> items)</h2>
+                <div id="cart-container">
+                    <!-- Each product will be rendered here -->
+                    <div id="template" class="cart-item hidden">
+                      <img src="" alt="Product Image">
+                      <div class="cart-item-details">
+                        <div class="cart-item-details-name">
+                        <h3 class="product-name"></h3>
+                        <p>Price: <span class="product-price"></span></p> </div>
+                        <div class="cart-item-details-name-quantity">
+                          <p class="item-total"> 0 đ</p>
+                        <p> 
+                          <button class="quantity-decrease">-</button>
+                          <span class="product-quantity">1</span>
+                          <button class="quantity-increase">+</button>
+                        </p>
+                      
+                     </div>
+                    </div>
+                      <button class="delete-btn">X</button> <!-- Button to delete product -->
+                    </div>
+            
+                  </div>     
+                  <div class="order-notes">
+                    <label for="notes">Order notes</label>
+                    <textarea id="notes" placeholder="Nhập ghi chú tại đây..."></textarea>
+                </div> 
+            </div>     
+            <div class="order-summary">
+                <h2>Order information</h2>
+            
+                <div class="delivery-option">
+                    <label><input type="radio" name="delivery" id="immediate-delivery" checked> Delivered when available</label>
+                    <label><input type="radio" name="delivery" id="scheduled-delivery"> Choose a time</label>
+                </div>
+                <div class="time-picker" style="display: none;">
+                    <div class="time-input">
+                        <label for="delivery-date">Delivery date</label>
+                        <select id="delivery-date">
+                            <option value="today">Today</option>
+                            <option value="tomorrow">Tomorrow</option>
+                            <option value="next">Another day</option>
+                        </select>
+                    </div>
+                    <div class="time-input">
+                        <label for="delivery-time">Delivery time</label>
+                        <select id="delivery-time">
+                            <option value="8-9">08:00 - 09:00</option>
+                            <option value="9-10">09:00 - 10:00</option>
+                            <option value="10-11">10:00 - 11:00</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="total-price">
+                    <div class="cart-total" id="cart-total">Total: 0 đ</div>
+                   
+                </div>
+                <button class="pay" onclick="clearCart()">Pay</button>
+            
+                <div class="policy-note">
+                    <p>Currently we only apply payment for orders with a minimum value of <strong>40,000 VND</strong> or more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<script>
+    // Function to load cart items
+    function loadCart() {
+      const cartContainer = document.getElementById("cart-container");
+      const template = document.getElementById("template");
+      const cartTotalElement = document.getElementById("cart-total");
+      const cartCountElement = document.getElementById("cart-count");
+      const orderNotes = document.querySelector(".order-notes");
+
+      // Get cart data from localStorage
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      let total = 0;
+
+      // Remove all existing cart items (excluding the template)
+      const items = cartContainer.querySelectorAll(".cart-item:not(#template)");
+      items.forEach(item => item.remove());
+
+     
+
+      cartCountElement.textContent = cart.length;
+
+// Show/hide order notes based on cart items
+  if (cart.length === 0) {
+  cartTotalElement.textContent = "Total: 0 đ";
+  orderNotes.style.display = "none"; // Ẩn phần ghi chú
+  const emptyMessage = document.createElement("p");
+    emptyMessage.textContent = "Your shopping cart is empty.";
+    emptyMessage.className = "empty-cart-message";
+    cartContainer.appendChild(emptyMessage);
+  return;
+  } else {
+  orderNotes.style.display = "block"; // Hiện phần ghi chú
+  }
+
+      cart.forEach((product, index) => {
+        const item = template.cloneNode(true); // Clone the template
+        item.id = ""; // Remove ID to avoid duplicates
+        item.classList.remove("hidden");
+
+        // Populate item with product data
+        item.querySelector("img").src = product.image;
+        item.querySelector("img").alt = product.name;
+        item.querySelector(".product-name").textContent = product.name;
+        item.querySelector(".product-price").textContent = product.price;
+        item.querySelector(".product-quantity").textContent = product.quantity;
+        item.querySelector(".item-total").textContent = ` ${(parseFloat(product.price.replace(/[^0-9]/g, "")) * product.quantity).toLocaleString()} đ`;
+
+        // Add click events for increase/decrease buttons
+        item.querySelector(".quantity-decrease").addEventListener("click", () => updateQuantity(index, -1));
+        item.querySelector(".quantity-increase").addEventListener("click", () => updateQuantity(index, 1));
+
+        // Add click event to delete button
+        item.querySelector(".delete-btn").addEventListener("click", () => removeFromCart(index));
+
+        // Append to container
+        cartContainer.appendChild(item);
+
+        // Calculate total price
+        total += parseFloat(product.price.replace(/[^0-9]/g, "")) * product.quantity;
+      });
+
+      // Update total price
+      cartTotalElement.textContent = `Total: ${total.toLocaleString()} đ`;
+    }
+
+    // Function to update quantity
+    function updateQuantity(index, change) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart[index].quantity = Math.max(1, cart[index].quantity + change); // Prevent quantity < 1
+      localStorage.setItem("cart", JSON.stringify(cart)); // Save changes to localStorage
+      loadCart(); // Reload the cart
+    }
+
+    // Function to remove product from cart
+    function removeFromCart(index) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      // Remove the product at the specified index
+      cart.splice(index, 1);
+
+      // Save updated cart back to localStorage
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      // Reload the cart to update UI
+      loadCart();
+    }
+
+    // Function to clear the cart
+    function clearCart() {
+      localStorage.removeItem("cart");
+      alert("Purchase successfully");
+      loadCart();
+    }
+
+    // Load cart on page load
+    window.onload = loadCart;
+  </script>
+
+<script>
+    // JavaScript để điều khiển hiển thị
+        document.addEventListener('DOMContentLoaded', function () {
+        const immediateDelivery = document.getElementById('immediate-delivery');
+        const scheduledDelivery = document.getElementById('scheduled-delivery');
+        const timePicker = document.querySelector('.time-picker');
+
+        // Khi chọn "Giao khi có hàng"
+        immediateDelivery.addEventListener('click', function () {
+            timePicker.style.display = 'none';
+        });
+
+        // Khi chọn "Chọn thời gian"
+        scheduledDelivery.addEventListener('click', function () {
+            timePicker.style.display = 'block';
+        });
+    });
+</script>
+
+
+ <!-- ---------------------footer signup--------------------------- -->
+<section class="Signupfornewsletter">
+    <div class="container">
+            <div class="Signupfornewsletter-container">
+                    <div class="Signupfornewsletter-text">
+                        <li><p>Sign up for newsletter</p></li>
+                        <li><p>To receive new information from TTG as well as promotions</p></li>
+                     </div>
+                     <div class="Signupfornewsletter-search">
+                         <div class="Signupfornewsletter-search-content">
+                         <input type="text" id="search" placeholder="Please enter your email...">
+                         <button>Sign up</button>
+                     </div>
+                     </div>
+            </div>
+    </div>
+</section>
+ <!-- --------------------------------footer------------------------------------- -->
+ <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About TTG</h3>
+        <p>Dung G2's official commercial site - Gian Tiep Game. Always looking for products for gamers.</p>
+        <img src="./IMG2/bo-cong-thuong.png" alt="Bộ Công Thương" class="logo">
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Contact information</h3>
+        <p>CS1: 180D Thái Thịnh - Đống Đa - HN</p>
+        <p>CS2: 83 - 85 Thái Hà - Đống Đa - HN</p>
+        <p>CS3: 40 đường Vĩnh Viễn - Q10 - TPHCM</p>
+        <p>📞 0968 239 497 - 097 221 6881</p>
+        <p>📧 hiencf123@gmail.com</p>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Bank Account</h3>
+        <ul>
+          <li>Bank Account</li>
+          <li>Payment method</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Policy</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Warranty Policy</li>
+          <li>Return Policy</li>
+          <li>Terms of Use</li>
+          <li>Shipping & Inspection Policy</li>
+        </ul>
+      </div>
+    
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2024 Copyright of Mocato Vietnam Joint Stock Company - Head office: 248 Phu Vien, Bo De, Long Bien, Hanoi. Business registration certificate: 0109787586 issued by Hanoi Department of Planning and Investment on October 22, 2021</p>
+    </div>
+  </footer>
+  
+<script src="script.js"></script>
+</body>
+</html>
+

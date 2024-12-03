@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logupForm</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="./icon.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>Hotline: 0968 239 497 - 097 221 6881 * Tư vấn build PC: 0986552233 * Địa chỉ: CS1: 180D Thái Thịnh CS2: 83-85 Thái Hà - Đống Đa - Hà Nội CS3: 40 Đường Vĩnh Viễn - Q10 - TP.HCM
+    </header>
+    
+    <nav>   
+        <div class="container">
+        <ul>
+            <li class="logo"><a href="./homepage.html"><img src="./IMG/logo.png" alt=""></a></li>
+            <li class="search"><input type="text" placeholder="Enter your product...."><i class="fas fa-search"></i></li>
+            <li id="address-form"><a href="#"><i class="fas fa-location-arrow" style="color:black"></i>Ha Noi </a></li>
+            <li class="mycart"><a href="./mycartpage.html"><button><i class="fas fa-shopping-cart"></i>May cart</button></a></li>
+            <li class="contact"><a href="./contactpage.html"><button><i class="fas fa-headset"></i>Contact</button></a></li>
+            <div class="profile">
+                <div class="loginlogup">
+                    <li><a href="./login.html">Login</a></li>
+                    <li>/</li>
+                <li><a href="./logup.html">Logup</a></li> </div>
+                <li class="account"><a href="./profilepage-information.html"><button><i class="fas fa-user"></i>My account</button></a></li>
+                </div>
+                <div class="address-form">
+                    <div class="address-form-content">
+                        <h2> Select shipping address <span id="address-close">X Exit</span></h2>
+                        <form action="">                 
+                        <p> Select the complete delivery address to know the exact transaction time</p>
+                        <select name="" >
+                            <option value="">--Select location</option>
+                            <option value="">Ha Noi</option>
+                            <option value="">Ho Chi Minh</option>
+                            <option value="">Da Nang</option>
+                        </select>
+        
+                        <select name="">
+                            <option value="">--Select district</option>
+                            <option value="">Hoang Mai</option>
+                            <option value="">Nam Tu Niem</option>
+                            <option value="">Thanh Xuan</option>
+                        </select>
+        
+                        <select name="" >
+                            <option value="">--Select ward</option>
+                            <option value="">Hoang Liet</option>
+                            <option value="">Tan Mai</option>
+                            <option value="">Linh Nam</option>
+                        </select>
+                        <input type="text" placeholder="House number, street name, street name (optional)">
+                        <button>Confirm</button>
+                    </form>
+                    </div>
+                </div>
+        </ul>
+        </div>
+    </nav>
+    
+    <section class="menu-bar">
+        <div class="container">
+            <div class="menu-bar-content">
+        <ul >
+            <li class="listofproduct"><a href="#"><i class="fas fa-list"></i>List of product</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="./homepage.html#section4" ><i class="fas fa-desktop"></i>Gaming PC </a></li>
+                        <li><a href="./homepage.html#section5"><i class="fas fa-desktop"></i>Graphic PC </i></a></li>
+                        <li><a href="./homepage.html#section6"><i class="fas fa-desktop"></i>Office PC </i></a></li>
+                        <li><a href="./homepage.html#section5"><i class="fas fa-desktop"></i>Worksation PC </i></a></li>
+                        <li><a href="./homepage.html#section8"> <i class="fas fa-headphones"></i>Gear </a></li>
+                        <li><a href="./homepage.html#section7"> <i class="fas fa-sd-card"></i>PC component</i></a></li>
+                        <li><a href="#"><i class="fas fa-desktop"></i>Build PC as require</i></a></li>
+                        <li><a href="#" style="color: #F9BB01">+  More....</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li> <a href="">  <img src="./IMG/Quality.png" alt="" class="icon">Quality guaranteed</a></li>
+            <li> <a href="">  <img src="./IMG/shipping.png" alt="" class="icon1">Super fast shipping</a></li>
+            <li> <a href="">  <img src="./IMG/phone.png" alt="" class="icon2">Build PC:0929614783</a></li>
+        </ul>
+            </div>
+        </div>
+    </section>
+
+     <section class="logup-all">
+        <div class="container">
+            <div class="logup-content">
+                <div class="logup-container">
+                    <div class="logup-header">
+                        <a href="#" class="active">Sign up</a>
+                        <span>|</span>
+                        <a href="login.html">Sign in</a>
+                    </div>
+                    <form id="signupForm">
+                        <label for="signup-name">Name:</label>
+                        <input type="text" id="signup-name" name="name" required>
+            
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" name="email" required>
+                        
+                        <label for="signup-gender">Gender:</label>
+                        <div class="gender-selection">
+                            <input type="radio" id="signup-male" name="gender" value="male" required>
+                            <label for="signup-male">Male</label>
+                            
+                            <input type="radio" id="signup-female" name="gender" value="female" required>
+                            <label for="signup-female">Female</label>
+                        </div>
+            
+                        <label for="signup-dob">Date of Birth:</label>
+                        <input type="date" id="signup-dob" name="dob" required>
+                        
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" name="password" required>
+                        
+                        <label for="signup-confirm-password">Confirm Password:</label>
+                        <input type="password" id="signup-confirm-password" name="confirm-password" required>
+                        <!-- Vùng hiển thị lỗi -->
+                        <span id="password-error" class="error-message"></span>
+                         <div class="buttonandlink">
+                            <div class="buttons">
+                        <button type="submit">Sign up</button>
+                        </div>
+                        <div class="links">
+                            <p>Already have an account? <a href="login.html">Sign in now</a></p>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+    const signupForm = document.getElementById("signupForm");
+    const passwordError = document.getElementById("password-error");
+
+    if (signupForm) {
+        signupForm.addEventListener("submit", handleSignup);
+    }
+
+    function handleSignup(event) {
+        event.preventDefault(); // Ngăn form reload trang
+
+        const name = document.getElementById("signup-name").value;
+        const email = document.getElementById("signup-email").value;
+        const gender = document.querySelector("input[name='gender']:checked").value;
+        const dob = document.getElementById("signup-dob").value;
+        const password = document.getElementById("signup-password").value;
+        const confirmPassword = document.getElementById("signup-confirm-password").value;
+
+        if (password !== confirmPassword) {
+            passwordError.textContent = "Passwords do not match.";
+            passwordError.style.color = "red";
+            return;
+        } else {
+            passwordError.textContent = "";
+        }
+
+        // Lưu thông tin vào localStorage
+        const userData = { name, email, password };
+        localStorage.setItem("userData", JSON.stringify(userData));
+
+        alert("Signup successful! Please log in.");
+        window.location.href = "login.html"; // Chuyển đến trang đăng nhập
+    }
+});
+    </script>
+
+          <!-- ---------------------footer signup--------------------------- -->
+<section class="Signupfornewsletter">
+    <div class="container">
+            <div class="Signupfornewsletter-container">
+                    <div class="Signupfornewsletter-text">
+                        <li><p>Sign up for newsletter</p></li>
+                        <li><p>To receive new information from TTG as well as promotions</p></li>
+                     </div>
+                     <div class="Signupfornewsletter-search">
+                         <div class="Signupfornewsletter-search-content">
+                         <input type="text" id="search" placeholder="Please enter your email...">
+                         <button>Sign up</button>
+                     </div>
+                     </div>
+            </div>
+    </div>
+</section>
+ <!-- --------------------------------footer------------------------------------- -->
+ <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About TTG</h3>
+        <p>Dung G2's official commercial site - Gian Tiep Game. Always looking for products for gamers.</p>
+        <img src="./IMG2/bo-cong-thuong.png" alt="Bộ Công Thương" class="logo">
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Contact information</h3>
+        <p>CS1: 180D Thái Thịnh - Đống Đa - HN</p>
+        <p>CS2: 83 - 85 Thái Hà - Đống Đa - HN</p>
+        <p>CS3: 40 đường Vĩnh Viễn - Q10 - TPHCM</p>
+        <p>📞 0968 239 497 - 097 221 6881</p>
+        <p>📧 hiencf123@gmail.com</p>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Bank Account</h3>
+        <ul>
+          <li><a href="./bankaccount.html">Bank Account</a></li>
+          <li><a href="./paymentmethod.html">Payment method</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Policy</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Warranty Policy</li>
+          <li>Return Policy</li>
+          <li>Terms of Use</li>
+          <li>Shipping & Inspection Policy</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2024 Copyright of Mocato Vietnam Joint Stock Company - Head office: 248 Phu Vien, Bo De, Long Bien, Hanoi. Business registration certificate: 0109787586 issued by Hanoi Department of Planning and Investment on October 22, 2021</p>
+    </div>
+  </footer>
+  
+<script src="script.js"></script>
+</body>
+</html>
+
